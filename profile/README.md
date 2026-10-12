@@ -4,14 +4,14 @@ Vendor organisation for the **DataArpeggio** appliance — an offline-installabl
 
 Source code: [engeen-services/data-arpeggio](https://github.com/engeen-services/data-arpeggio)
 
-## Vendor Cosign signing key — current fingerprint
+## SHA-256 of the public key DER — current release-signing key.
 
 DataArpeggio release bundles, container images, and update channel manifests are signed with the vendor's Cosign key. Pin the fingerprint at first install and re-verify after every upgrade.
 
 **Current fingerprint** (SHA-256 of the public key DER, rotated 2026-05-12):
 
 ```
-47:6e:32:7e:0c:73:1d:24:29:09:94:9d:26:fa:b3:db:a0:e9:16:a8:ee:d9:b6:34:93:40:ca:9e:35:8c:94:28
+c1:38:3d:7b:74:a7:44:2f:0a:54:d2:60:11:f2:d9:a0:44:69:3b:18:9e:ea:58:c9:34:b7:52:bf:ff:a0:f1:5a
 ```
 
 This page is one of the three out-of-band locations where the vendor publishes the current fingerprint (the other two: the vendor website, and the customer-facing operator handbook shipped inside each release bundle). Compare any two of the three against the fingerprint you compute from `scripts/deploy/vendor-cosign.pub` after install:
